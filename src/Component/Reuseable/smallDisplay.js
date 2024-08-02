@@ -18,7 +18,7 @@ const smallDisplay = ({ title, description, imageUrl }) => {  // variable untuk 
 
 const containerStyle = {
   backgroundColor: "rgba(217, 217, 217, 0.7)",
-  width: "25rem",
+  width: "28rem",
   margin: "0 auto",
   borderRadius: "0",
   border: "none",

@@ -1,3 +1,32 @@
+# Hal yang masih perlu diperbaiki
+
+1. Style masih terdapat dalam JS file (terutama di reuseable).
+
+2. Nama belum seragam (JS file awalan besar, CSS awalan kecil).
+
+3. Header belum follow.
+
+4. kurang page admin.
+
+5. tulisan reuseable salah.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

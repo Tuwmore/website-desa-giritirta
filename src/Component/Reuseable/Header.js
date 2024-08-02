@@ -9,7 +9,8 @@ import "./reusableStyle.css";
 
 function Header() {
   return (
-    <Container fluid>
+    <Container fluid
+    >
       <Row>
         <Stack direction="horizontal" gap={3}>
             <button className="font-header" style={buttonStyle}><Image src={Logo} fluid /></button>

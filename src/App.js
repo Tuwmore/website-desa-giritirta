@@ -1,20 +1,24 @@
 import './App.css';
 import Header from './Component/Reuseable/Header';
-import BigDisplay from "./Component/Reuseable/bigDisplay";
-import ThumbnailAdmin from './Component/Reuseable/thumbnailAdmin';
-import Thumbnail from "./Component/Reuseable/thumbnail"
-import { Container } from 'react-bootstrap';
+import Footer from './Component/Reuseable/Footer';
+import Beranda from './Component/WebPage/beranda';
+import BerandaAdmin from './Component/WebPage/BerandaAdmin';
+import Artikel from './Component/WebPage/Artikel';
+import FormPage from './Component/WebPage/FormPage';
+import { Container, Stack } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import Carousels from './Component/Reuseable/carousels';
 
 function App() {
   return ( 
-    <Container fluid className="w-100 h-100 d-flex flex-column">
-      <Header>
-      </Header>
-      
-      <Carousels></Carousels>
+    <Container fluid style={{padding: "0px", overflow:"hidden"}}>
+      <Stack gap={5}>
+        <Header>
+        </Header>
 
+        <FormPage/>
+
+        <Footer></Footer>
+      </Stack>  
     </Container>
 
   );

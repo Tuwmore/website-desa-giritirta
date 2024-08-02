@@ -39,3 +39,27 @@
     height: auto; /* Maintain aspect ratio */
     max-height: 200px; /* Maximum height */
 }
+
+.background-image-container {
+    background-image: url('../../Assets/Glass\ block\ besar.png'); /* Replace with your image path */
+    background-size: cover; /* Cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    width: 100%; /* Full width */
+    height: 40vh; /* Full height of the viewport */
+    /*background-attachment: fixed; /* Fixed position to prevent scrolling */
+    overflow: hidden;
+  }
+  
+  /* untuk GIF*/
+  .overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent overlay */
+  }
