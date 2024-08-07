@@ -3,6 +3,7 @@ import Header from './Component/Reuseable/Header';
 import Footer from './Component/Reuseable/Footer';
 import Beranda from './Component/WebPage/beranda';
 import BerandaAdmin from './Component/WebPage/BerandaAdmin';
+import BerandaArtikel from "./Component/WebPage/BerandaArtikel"
 import Artikel from './Component/WebPage/Artikel';
 import FormPage from './Component/WebPage/FormPage';
 import { Container, Stack } from 'react-bootstrap';
@@ -15,7 +16,7 @@ function App() {
         <Header>
         </Header>
 
-        <FormPage/>
+        <Beranda/>
 
         <Footer></Footer>
       </Stack>  

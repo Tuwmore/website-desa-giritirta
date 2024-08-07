@@ -40,8 +40,9 @@
     max-height: 200px; /* Maximum height */
 }
 
+/*untuk background footer*/
 .background-image-container {
-    background-image: url('../../Assets/Glass\ block\ besar.png'); /* Replace with your image path */
+    background-image: url('../../Assets/Footer.png'); /* Replace with your image path */
     background-size: cover; /* Cover the entire container */
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */

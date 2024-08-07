@@ -1,14 +1,14 @@
 import { Image } from "react-bootstrap";
-import GIF from "../../Assets/DSCF1286 (1).gif";
+import GIF from "../../Assets/DSCF1286 (1).gif"; // contoh
 import "./reusableStyle.css";
 
-function GifDisplay () {
+const GifDisplay = ({ imageText, image }) => {
     return(
         <div style={GIFContainer}>
-                <Image src={GIF} fluid style={GIFStyle}/>
+                <Image src={image} fluid style={GIFStyle}/>
                 <div style={overlayStyle}>
                     <div style={textStyle}>
-                        <h1>Selamat datang di desa Giritirta</h1>
+                        <h1>{imageText}</h1>
                     </div>
                 </div>
         </div>
@@ -41,7 +41,10 @@ const overlayStyle = {
 
   const textStyle = {
     color: 'white',
-    textAlign: 'center'
+    textAlign: 'center',
+    fontFamily: "Montserrat",
+    fontWeight: "bolder",
+    fontSize: "larger",
   };
 
 export default GifDisplay;

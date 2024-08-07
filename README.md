@@ -11,8 +11,49 @@
 5. tulisan reuseable salah.
 
 
+# Noted perubahan kode
+
+1. Biar bisa dinamik setiap page harus bisa nerima input
+
+contoh:
+
+import React from 'react';
+import { Card, Image } from 'react-bootstrap';
+import './customStyles.css'; // Import the custom CSS file
+
+const TextOnImage = ({ imageUrl, title, description }) => {
+  return (
+    <div className="image-container">
+      <Image src={imageUrl} fluid className="image" />
+      <div className="overlay">
+        <div className="text">
+          <h1>{title}</h1>
+          <p>{description}</p>
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default TextOnImage;
 
 
+import React from 'react';
+import TextOnImage from './TextOnImage'; // Adjust the path as necessary
+
+const App = () => {
+  return (
+    <div>
+      <TextOnImage
+        imageUrl="https://via.placeholder.com/1920x1080"
+        title="Welcome to My App"
+        description="This is an example of text over an image."
+      />
+    </div>
+  );
+};
+
+export default App;
 
 
 

@@ -1,22 +1,22 @@
-//Done for now
-
-import Button from 'react-bootstrap/Button';
-import Card from 'react-bootstrap/Card';
+// judul, gambar sama deskripsi hard code karena cuma dipake sekali
+import {Button, Card} from 'react-bootstrap';
 import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 import "./reusableStyle.css";
 
 const BigDisplay = ({ title, description, imageUrl }) => {  // variable untuk data dinamis
   return (
-    <Card style={containerStyle}>
-      <Card.Img variant="top" style={{borderRadius: "0px"}} src={Holder} />
-      <Card.Body>
-        <Card.Title style={JudulStyle}>Kenali Lebih Jauh Desa Giritirta</Card.Title>
-        <Card.Text className="font-deskripsi">
-          Tambahkan deskripsi disini
-        </Card.Text>
-        <Button style={buttonStyle}>Lebih lanjut</Button>
-      </Card.Body>
-    </Card>
+    <div>
+      <Card style={containerStyle}>
+        <Card.Img variant="top" style={{borderRadius: "0px"}} src={Holder} />
+        <Card.Body>
+          <Card.Title style={JudulStyle}>Kenali Lebih Jauh Desa Giritirta</Card.Title>
+          <Card.Text className="font-deskripsi">
+            Tambahkan deskripsi disini
+          </Card.Text>
+          <Button style={buttonStyle}>Lebih lanjut</Button>
+        </Card.Body>
+      </Card>
+    </div>
   );
 }
 

@@ -1,4 +1,3 @@
-//Done for now
 
 import React from 'react';
 import { Card, Button, Row, Col, Image } from 'react-bootstrap';
@@ -11,12 +10,12 @@ const ThumbnailAdmin = ({ imageUrl, title, description }) => { //variable diguna
     <Card className="mb-3" style={containerStyle}>
       <Row className="no-gutters">
         <Col md={4}>
-          <Card.Img src={Holder} />
+          <Card.Img src={imageUrl} />
         </Col>
         <Col md={5}>
           <Card.Body style={textCard}>
-            <Card.Title>Judul</Card.Title>
-            <Card.Text>Deskripsi artikel</Card.Text>
+            <Card.Title>{title}</Card.Title>
+            <Card.Text>{description}</Card.Text>
           </Card.Body>
         </Col>
         <Col md={3} className="d-flex align-items-center justify-content-center">

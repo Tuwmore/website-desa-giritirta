@@ -1,7 +1,6 @@
-//Done for now
 
 import React from 'react';
-import { Card, Button, Row, Col, Image } from 'react-bootstrap';
+import { Card, Row, Col, Image } from 'react-bootstrap';
 import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 import "./reusableStyle.css";
 
@@ -10,12 +9,12 @@ const Thumbnail = ({ imageUrl, title, description }) => { //variable digunakan n
     <Card className="mb-3" style={containerStyle}>
       <Row className="no-gutters">
         <Col md={4}>
-          <Card.Img src={Holder} style={{borderRadius: "2%"}}/>
+          <Card.Img src={imageUrl} style={{borderRadius: "2%"}}/>
         </Col>
         <Col md={5}>
           <Card.Body style={textCard}>
-            <Card.Title className='font-judul'>Judul</Card.Title>
-            <Card.Text className='font-deskripsi'>Deskripsi artikel</Card.Text>
+            <Card.Title className='font-judul'>{title}</Card.Title>
+            <Card.Text className='font-deskripsi'>{description}</Card.Text>
           </Card.Body>
         </Col>
       </Row>
@@ -24,7 +23,7 @@ const Thumbnail = ({ imageUrl, title, description }) => { //variable digunakan n
 };
 
 const containerStyle = {
-  width: "90%",
+  width: "100%",
   margin: "0 auto",
   borderRadius: "0",
   border: "none",

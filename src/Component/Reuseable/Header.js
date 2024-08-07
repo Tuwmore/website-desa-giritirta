@@ -1,9 +1,4 @@
-//Done for now
-
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import {Image} from 'react-bootstrap';
-import Stack from 'react-bootstrap/Stack';
+import {Image, Container, Row, Stack} from 'react-bootstrap';
 import Logo from "../../Assets/logo-KKN.png";
 import "./reusableStyle.css";
 

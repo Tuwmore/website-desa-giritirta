@@ -1,16 +1,16 @@
-//Done for now
-import Card from 'react-bootstrap/Card';
+import {Card, Button} from 'react-bootstrap';
 import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 
 const smallDisplay = ({ title, description, imageUrl }) => {  // variable untuk data dinamis
   return (
     <Card style={containerStyle}>
-      <Card.Img variant="top" src={Holder} style={{borderRadius: "0px"}}/>
+      <Card.Img variant="top" src={imageUrl} style={{borderRadius: "0px"}}/>
       <Card.Body>
-        <Card.Title style={JudulStyle}>Judul</Card.Title>
+        <Card.Title style={JudulStyle}>{title}</Card.Title>
         <Card.Text className="font-deskripsi">
-          deskripsi
+          {description}
         </Card.Text>
+        <Button style={buttonStyle}>Lebih lanjut</Button>
       </Card.Body>
     </Card>
   );
@@ -29,6 +29,18 @@ const JudulStyle = {
   fontWeight: "bolder",
   fontSize: "larger",
   color: "black",
+}
+
+const buttonStyle = {
+  backgroundColor: "rgba(0, 189, 157, 0.6)",
+  fontFamily: "Montserrat",
+  fontWeight: "500",
+  border: 'none', // Remove borders
+  color: 'black', 
+  textAlign: 'center', 
+  fontSize: '16px', 
+  cursor: 'pointer', 
+  borderRadius: '0px',
 }
 
 export default smallDisplay;

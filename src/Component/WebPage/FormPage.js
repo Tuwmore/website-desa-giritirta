@@ -20,7 +20,7 @@ function FormPage (){
                     <Form.Control type="file" multiple />
                     </Form.Group>
             </Form>
-            <Button/>
+            <Button>Simpan</Button>
         </Stack>
     )
 }
