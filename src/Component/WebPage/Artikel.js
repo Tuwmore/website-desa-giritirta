@@ -6,26 +6,28 @@ import Header from "../Reuseable/Header";
 import Footer from "../Reuseable/Footer";
 import "./webPageStyle.css";
 
-function Artikel () {
+const Artikel = ({ title, description, artikel, imageUrl, imageCategory }) => {
     return(
         <Container fluid style={{padding: "0px", overflow:"hidden"}}>
             <Stack gap={5}>
                 <Header/>
                 <GifDisplay
-                    image={GIF}
+                    image={imageCategory}
                 />
-                <Judul/>
+                <Judul
+                    title={title}
+                />
                 <div style={artikelContainerStyle}>
                     <p style={textStyle}>
-                        Kegiatan dilaksanakan sebagai kelanjutan dari program sebelumnya yaitu pendesainan website desa. Program ini dilaksanakan guna memperbaharui tampilan website desa Giritirta menjadi lebih moderen dan dapat dijangkau oleh lebih banyak masyarakat. Juga guna melakukan efisiensi dari sisi desa dengan memandirikan pengelolaan website desa Giritirta.
+                        {description}
                     </p>
                 </div>
                 <GifDisplay
-                    image={GIF}
+                    image={imageUrl}
                 />
                 <div style={artikelContainerStyle}>
                     <p style={textStyle}>
-                        Kegiatan dilaksanakan sebagai kelanjutan dari program sebelumnya yaitu pendesainan website desa. Program ini dilaksanakan guna memperbaharui tampilan website desa Giritirta menjadi lebih moderen dan dapat dijangkau oleh lebih banyak masyarakat. Juga guna melakukan efisiensi dari sisi desa dengan memandirikan pengelolaan website desa Giritirta.
+                        {artikel}
                     </p>
                 </div>
                 <Footer/>

@@ -1,4 +1,5 @@
-import { Col, Row, Container, Pagination } from "react-bootstrap";
+import { Col, Row, Container, Pagination, Button, Stack } from "react-bootstrap";
+import { BrowserRouter as Router, Route, Link, Routes, Outlet,} from "react-router-dom";
 import Holder from "../../Assets/DSCF9005.JPG";
 import ThumbnailAdmin from "../Reuseable/thumbnailAdmin";
 import "./webPageStyle.css"
@@ -65,16 +66,21 @@ function BerandaAdmin (){
         }
 
     return (
-        <Container>
-            <Row xs={1} >
-                {cardData.map((card, index) => (
-                <Col key={index} style={{marginBottom:20}}>
-                <ThumbnailAdmin {...card} />
-                </Col>
-                ))}
-            </Row>
-            <Pagination size="md">{items}</Pagination>
-        </Container>
+        <Stack gap={5}>
+            <div style={{alignSelf: "center", marginTop: "3vh"}}>
+                <Button as={Link} to="/form-admin" size="lg" style={buttonStyle}> + Tambah </Button>
+            </div>
+            <Container>
+                <Row xs={1} >
+                    {cardData.map((card, index) => (
+                    <Col key={index} style={{marginBottom:20}}>
+                    <ThumbnailAdmin {...card} />
+                    </Col>
+                    ))}
+                </Row>
+                <Pagination size="md">{items}</Pagination>
+            </Container>
+        </Stack>
     )
 }
 

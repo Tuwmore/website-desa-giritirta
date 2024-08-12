@@ -2,13 +2,13 @@
 
 1. Style masih terdapat dalam JS file (terutama di reuseable).
 
-2. Nama belum seragam (JS file awalan besar, CSS awalan kecil).
+2. Nama belum seragam (JS file awalan besar, CSS awalan kecil). v
 
-3. Header belum follow.
+3. Header belum follow. v
 
-4. kurang page admin.
+4. kurang page admin. v
 
-5. tulisan reuseable salah.
+5. tulisan reuseable salah. v
 
 
 # Noted perubahan kode
@@ -54,6 +54,12 @@ const App = () => {
 };
 
 export default App;
+
+2. buat log in authenticator.
+
+3. coba database buat artikel.
+
+4. coba submit artikel baru lewat form.
 
 
 
