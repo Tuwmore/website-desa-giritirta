@@ -30,7 +30,6 @@ const JudulStyle = {
   fontWeight: "bold",
   fontSize: "small",
   color: "black",
-  alignItems: "normal",
 }
 
 export default carousels;

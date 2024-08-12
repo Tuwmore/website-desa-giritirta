@@ -6,6 +6,8 @@ import Judul from '../Reuseable/Judul';
 import Carousels from '../Reuseable/carousels';
 import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 import GIF from "../../Assets/DSCF1286 (1).gif"
+import Header from "../Reuseable/Header";
+import Footer from "../Reuseable/Footer";
 import "../WebPage/webPageStyle.css";
 
 function Beranda () {
@@ -51,84 +53,88 @@ function Beranda () {
       ];
       
     return(
-        <Stack gap={5}>
-            <div>
-                <GifDisplay 
-                    imageText="Selamat Datang di Desa Giritirta"
-                    image={GIF}
-                />
-            </div>
-
-
-            <div >
-                <Judul
-                    title = "1200M diatas permukaan laut" // bagian dari ketahui lebih banyak
-                />
-            </div>
-            <div className='half-background'>
-                <BigDisplay/>
-            </div>
-
-
-            <Judul
-                title = "Wisata desa Giritirta" //bagian wisata desa
-            />
-            <div className='background'>
-                <Stack gap={4}>
-                    <Row className="justify-content-md-center" lg ="5">
-                        <Col xs lg="5">
-                            <SmallDisplay></SmallDisplay>
-                        </Col>
-                        <Col xs lg="5">
-                            <SmallDisplay></SmallDisplay>
-                        </Col>
-                    </Row>
-                    <Container>
-                        <Row xs={1} md={4} xl={4} >
-                            {cardData.map((card, index) => (
-                            <Col key={index} style={{marginBottom:20}}>
-                                <Carousels {...card} />
-                            </Col>
-                            ))}
-                        </Row>
-                    </Container>
-                </Stack>
-            </div>
-
-
-            <Judul
-                title = 'UMKM dan Hasil Bumi' //bagian UMKM dam Hasil Bumi
-            />
-            <div>
-                <Stack gap={5}>
-                    <Row className="justify-content-md-center">
-                        <Col xs lg="5">
-                            <SmallDisplay/>
-                        </Col>
-                        <Col xs lg="5">
-                            <SmallDisplay/>
-                        </Col>
-                    </Row>
-
-
-                    <Judul
-                        title="Berita Terkini" // Bagian dari artikel terkini
+        <Container fluid style={{padding: "0px", overflow:"hidden"}}>
+            <Stack gap={5}>
+                <Header/>
+                <div>
+                    <GifDisplay 
+                        imageText="Selamat Datang di Desa Giritirta"
+                        image={GIF}
                     />
-                    <Container>
-                        <Row xs={1} md={4} xl={4} >
-                            {cardData.map((card, index) => (
-                            <Col key={index} style={{marginBottom:20}}>
-                                <Carousels {...card} />
+                </div>
+
+
+                <div >
+                    <Judul
+                        title = "1200M diatas permukaan laut" // bagian dari ketahui lebih banyak
+                    />
+                </div>
+                <div className='half-background'>
+                    <BigDisplay/>
+                </div>
+
+
+                <Judul
+                    title = "Wisata desa Giritirta" //bagian wisata desa
+                />
+                <div className='background'>
+                    <Stack gap={4}>
+                        <Row className="justify-content-md-center" md={1} xl={2} gap={4}>
+                            <Col>
+                                <SmallDisplay></SmallDisplay>
                             </Col>
-                            ))}
+                            <Col>
+                                <SmallDisplay></SmallDisplay>
+                            </Col>
                         </Row>
-                    </Container>
-                    <div style={{alignSelf: "center"}}>
-                        <Button size="lg" style={buttonStyle}> Lebih banyak </Button>
-                    </div>
-                </Stack>
-            </div>
-        </Stack>
+                        <Container>
+                            <Row sm={1} md={2} xl={4} >
+                                {cardData.map((card, index) => (
+                                <Col key={index} style={{marginBottom:20}}>
+                                    <Carousels {...card} />
+                                </Col>
+                                ))}
+                            </Row>
+                        </Container>
+                    </Stack>
+                </div>
+
+
+                <Judul
+                    title = 'UMKM dan Hasil Bumi' //bagian UMKM dam Hasil Bumi
+                />
+                <div>
+                    <Stack gap={5}>
+                        <Row className="justify-content-md-center" md={1} xl={2} gap={4}>
+                            <Col>
+                                <SmallDisplay/>
+                            </Col>
+                            <Col>
+                                <SmallDisplay/>
+                            </Col>
+                        </Row>
+
+
+                        <Judul
+                            title="Berita Terkini" // Bagian dari artikel terkini
+                        />
+                        <Container>
+                            <Row sm={1} md={2} xl={4} >
+                                {cardData.map((card, index) => (
+                                <Col key={index} style={{marginBottom:20}}>
+                                    <Carousels {...card} />
+                                </Col>
+                                ))}
+                            </Row>
+                        </Container>
+                        <div style={{alignSelf: "center"}}>
+                            <Button size="lg" style={buttonStyle}> Lebih banyak </Button>
+                        </div>
+                    </Stack>
+                </div>
+                <Footer/>
+            </Stack>
+        </Container>
     );
 };
 

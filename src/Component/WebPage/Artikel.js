@@ -1,25 +1,36 @@
-import { Stack } from "react-bootstrap";
+import { Container, Stack } from "react-bootstrap";
 import GifDisplay from "../Reuseable/GifDisplay";
 import Judul from "../Reuseable/Judul";
+import GIF from "../../Assets/DSCF1286 (1).gif";
+import Header from "../Reuseable/Header";
+import Footer from "../Reuseable/Footer";
 import "./webPageStyle.css";
 
 function Artikel () {
     return(
-        <Stack gap={5}>
-            <GifDisplay/>
-            <Judul/>
-            <div style={artikelContainerStyle}>
-                <p style={textStyle}>
-                    Kegiatan dilaksanakan sebagai kelanjutan dari program sebelumnya yaitu pendesainan website desa. Program ini dilaksanakan guna memperbaharui tampilan website desa Giritirta menjadi lebih moderen dan dapat dijangkau oleh lebih banyak masyarakat. Juga guna melakukan efisiensi dari sisi desa dengan memandirikan pengelolaan website desa Giritirta.
-                </p>
-            </div>
-            <GifDisplay/>
-            <div style={artikelContainerStyle}>
-                <p style={textStyle}>
-                    Kegiatan dilaksanakan sebagai kelanjutan dari program sebelumnya yaitu pendesainan website desa. Program ini dilaksanakan guna memperbaharui tampilan website desa Giritirta menjadi lebih moderen dan dapat dijangkau oleh lebih banyak masyarakat. Juga guna melakukan efisiensi dari sisi desa dengan memandirikan pengelolaan website desa Giritirta.
-                </p>
-            </div>
-        </Stack>
+        <Container fluid style={{padding: "0px", overflow:"hidden"}}>
+            <Stack gap={5}>
+                <Header/>
+                <GifDisplay
+                    image={GIF}
+                />
+                <Judul/>
+                <div style={artikelContainerStyle}>
+                    <p style={textStyle}>
+                        Kegiatan dilaksanakan sebagai kelanjutan dari program sebelumnya yaitu pendesainan website desa. Program ini dilaksanakan guna memperbaharui tampilan website desa Giritirta menjadi lebih moderen dan dapat dijangkau oleh lebih banyak masyarakat. Juga guna melakukan efisiensi dari sisi desa dengan memandirikan pengelolaan website desa Giritirta.
+                    </p>
+                </div>
+                <GifDisplay
+                    image={GIF}
+                />
+                <div style={artikelContainerStyle}>
+                    <p style={textStyle}>
+                        Kegiatan dilaksanakan sebagai kelanjutan dari program sebelumnya yaitu pendesainan website desa. Program ini dilaksanakan guna memperbaharui tampilan website desa Giritirta menjadi lebih moderen dan dapat dijangkau oleh lebih banyak masyarakat. Juga guna melakukan efisiensi dari sisi desa dengan memandirikan pengelolaan website desa Giritirta.
+                    </p>
+                </div>
+                <Footer/>
+            </Stack>
+        </Container>
     );
 };
 

@@ -3,7 +3,7 @@ import React from 'react';
 import { Card, Button, Row, Col, Image } from 'react-bootstrap';
 import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 import trash from "../../Assets/trash.png"
-import "./reusableStyle.css";
+import "./reuseableStyle.css";
 
 const ThumbnailAdmin = ({ imageUrl, title, description }) => { //variable digunakan nanti saat dinamis
   return (
@@ -29,7 +29,7 @@ const ThumbnailAdmin = ({ imageUrl, title, description }) => { //variable diguna
 };
 
 const containerStyle = {
-  width: "90%",
+  width: "100%",
   margin: "0 auto",
   borderRadius: "0",
   border: "none",

@@ -1,6 +1,6 @@
 .font-header{
     font-family: Montserrat;
-    font-weight:bolder;
+    font-weight: 700;
     font-size:larger;
     color: black;
 }
@@ -64,3 +64,9 @@
     align-items: center;
     background-color: rgba(0, 0, 0, 0.5); /* Optional: Adds a semi-transparent overlay */
   }
+
+  .navbar{
+    background-color:rgba(255, 255, 255, 0.9);
+    background-blend-mode:screen;
+  }
+  

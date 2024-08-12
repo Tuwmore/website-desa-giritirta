@@ -1,6 +1,8 @@
-import { Col, Row, Container, Pagination } from "react-bootstrap";
+import { Col, Row, Container, Pagination, Stack } from "react-bootstrap";
 import Thumbnail from "../Reuseable/thumbnail";
-import Holder from "../../Assets/DSCF9005.JPG"
+import Holder from "../../Assets/DSCF9005.JPG";
+import Header from "../Reuseable/Header";
+import Footer from "../Reuseable/Footer";
 import "./webPageStyle.css"
 
 function BerandaAdmin (){
@@ -65,16 +67,20 @@ function BerandaAdmin (){
         }
 
     return (
-        <Container>
-            <Row xs={1} >
-                {cardData.map((card, index) => (
-                <Col key={index} style={{marginBottom:20}}>
-                <Thumbnail {...card} />
-                </Col>
-                ))}
-            </Row>
-            <Pagination size="md">{items}</Pagination>
-        </Container>
+        <Stack>
+            <Header/>
+            <Container>
+                <Row xs={1} >
+                    {cardData.map((card, index) => (
+                    <Col key={index} style={{marginBottom:20}}>
+                    <Thumbnail {...card} />
+                    </Col>
+                    ))}
+                </Row>
+                <Pagination size="md">{items}</Pagination>
+            </Container>
+            <Footer/>
+        </Stack>
     )
 }
 

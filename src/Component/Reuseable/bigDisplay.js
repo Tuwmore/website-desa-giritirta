@@ -1,7 +1,7 @@
 // judul, gambar sama deskripsi hard code karena cuma dipake sekali
 import {Button, Card} from 'react-bootstrap';
 import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
-import "./reusableStyle.css";
+import "./reuseableStyle.css";
 
 const BigDisplay = ({ title, description, imageUrl }) => {  // variable untuk data dinamis
   return (
@@ -11,7 +11,7 @@ const BigDisplay = ({ title, description, imageUrl }) => {  // variable untuk da
         <Card.Body>
           <Card.Title style={JudulStyle}>Kenali Lebih Jauh Desa Giritirta</Card.Title>
           <Card.Text className="font-deskripsi">
-            Tambahkan deskripsi disini
+            Desa Giritirta, Kecamatan Pejawaran, Kabupaten Banjarnegara
           </Card.Text>
           <Button style={buttonStyle}>Lebih lanjut</Button>
         </Card.Body>
