@@ -4,10 +4,11 @@ import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 import "./reuseableStyle.css";
 
 const BigDisplay = ({ title, description, imageUrl }) => {  // variable untuk data dinamis
+
   return (
     <div>
       <Card style={containerStyle}>
-        <Card.Img variant="top" style={{borderRadius: "0px"}} src={Holder} />
+        <Card.Img variant="top" style={{borderRadius: "0px"}} src={"https://firebasestorage.googleapis.com/v0/b/website-desa-giritirta-banjar.appspot.com/o/DSCF8766.JPG?alt=media&token=ab8dcea5-6eb1-4bfb-a7fd-bc62c637d4b9"} />
         <Card.Body>
           <Card.Title style={JudulStyle}>Kenali Lebih Jauh Desa Giritirta</Card.Title>
           <Card.Text className="font-deskripsi">

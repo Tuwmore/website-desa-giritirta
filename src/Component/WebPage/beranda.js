@@ -5,9 +5,9 @@ import GifDisplay from '../Reuseable/GifDisplay';
 import Judul from '../Reuseable/Judul';
 import Carousels from '../Reuseable/carousels';
 import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
-import GIF from "../../Assets/DSCF1286 (1).gif"
 import Header from "../Reuseable/Header";
 import Footer from "../Reuseable/Footer";
+import { BrowserRouter as Router, Route, Link, Routes, Outlet,} from "react-router-dom";
 import "../WebPage/webPageStyle.css";
 
 function Beranda () {
@@ -58,8 +58,8 @@ function Beranda () {
                 <Header/>
                 <div>
                     <GifDisplay 
-                        imageText="Selamat Datang di Desa Giritirta"
-                        image={GIF}
+                        imageText="Selamat Datang di Desa Giritirta dieng"
+                        image="https://firebasestorage.googleapis.com/v0/b/website-desa-giritirta-banjar.appspot.com/o/DSCF1286%20(1).gif?alt=media&token=2bc70292-9303-4eb7-a6e3-30fd9d345265"
                     />
                 </div>
 
@@ -70,7 +70,9 @@ function Beranda () {
                     />
                 </div>
                 <div className='half-background'>
-                    <BigDisplay/>
+                    <BigDisplay
+                        imagePath="website-desa-giritirta-banjar.appspot.com/DSCF1286 (1).gif"
+                    />
                 </div>
 
 
@@ -78,7 +80,7 @@ function Beranda () {
                     title = "Wisata desa Giritirta" //bagian wisata desa
                 />
                 <div className='background'>
-                    <Stack gap={4}>
+                    <Stack gap={5}>
                         <Row className="justify-content-md-center" md={1} xl={2} gap={4}>
                             <Col>
                                 <SmallDisplay></SmallDisplay>
@@ -87,15 +89,9 @@ function Beranda () {
                                 <SmallDisplay></SmallDisplay>
                             </Col>
                         </Row>
-                        <Container>
-                            <Row sm={1} md={2} xl={4} >
-                                {cardData.map((card, index) => (
-                                <Col key={index} style={{marginBottom:20}}>
-                                    <Carousels {...card} />
-                                </Col>
-                                ))}
-                            </Row>
-                        </Container>
+                        <div style={{alignSelf: "center"}}>
+                            <Button as={Link} to="./beranda-artikel" size="lg" style={buttonStyle}> Lebih banyak </Button>
+                        </div>
                     </Stack>
                 </div>
 
@@ -128,7 +124,7 @@ function Beranda () {
                             </Row>
                         </Container>
                         <div style={{alignSelf: "center"}}>
-                            <Button size="lg" style={buttonStyle}> Lebih banyak </Button>
+                            <Button as={Link} to="./beranda-artikel" size="lg" style={buttonStyle}> Lebih banyak </Button>
                         </div>
                     </Stack>
                 </div>

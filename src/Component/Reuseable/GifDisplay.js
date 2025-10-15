@@ -1,5 +1,4 @@
 import { Image } from "react-bootstrap";
-import GIF from "../../Assets/DSCF1286 (1).gif"; // contoh
 import "./reuseableStyle.css";
 
 const GifDisplay = ({ imageText, image }) => {

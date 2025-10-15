@@ -1,8 +1,5 @@
 import {Image, Container, Row, Stack, Navbar, Nav, Button} from 'react-bootstrap';
 import Logo from "../../Assets/logo-KKN.png";
-import Beranda from '../WebPage/beranda';
-import Artikel from '../WebPage/Artikel';
-import BerandaArtikel from "../WebPage/BerandaArtikel"
 import { BrowserRouter as Router, Route, Link, Routes, Outlet,} from "react-router-dom";
 import "./reuseableStyle.css";
 

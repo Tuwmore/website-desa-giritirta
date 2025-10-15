@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Card, Row, Col, Image } from 'react-bootstrap';
-import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 import "./reuseableStyle.css";
 
 const Thumbnail = ({ imageUrl, title, description }) => { //variable digunakan nanti saat dinamis

@@ -1,9 +1,14 @@
 import { Container, Stack } from "react-bootstrap";
 import GifDisplay from "../Reuseable/GifDisplay";
 import Judul from "../Reuseable/Judul";
-import GIF from "../../Assets/DSCF1286 (1).gif";
 import Header from "../Reuseable/Header";
 import Footer from "../Reuseable/Footer";
+import PetaKemiringan from "../../Assets/Peta Kemiringan.jpg"
+import PetaStunting from "../../Assets/peta resiko stunting.jpg"
+import PetaGizi from "../../Assets/peta sebaran anak kurang gizi.jpg"
+import PetaPertanian from "../../Assets/peta sebaran pertanian.jpg"
+import PetaJalan from "../../Assets/Peta Sebaran Titik Kerusakan Jalan dan Tingkat PCI.jpg"
+import PetaWisata from "../../Assets/Peta Tracking WIsata.jpg"
 import "./webPageStyle.css";
 
 const Artikel = ({ title, description, artikel, imageUrl, imageCategory }) => {
@@ -12,18 +17,18 @@ const Artikel = ({ title, description, artikel, imageUrl, imageCategory }) => {
             <Stack gap={5}>
                 <Header/>
                 <GifDisplay
-                    image={imageCategory}
+                    //image={imageCategory}
                 />
                 <Judul
-                    title={title}
+                    title={"Peta Kemiringan"}
                 />
                 <div style={artikelContainerStyle}>
-                    <p style={textStyle}>
+                    <p style={textStyle}>                        
                         {description}
                     </p>
                 </div>
                 <GifDisplay
-                    image={imageUrl}
+                    image={PetaWisata}
                 />
                 <div style={artikelContainerStyle}>
                     <p style={textStyle}>

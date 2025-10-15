@@ -10,6 +10,12 @@
 
 5. tulisan reuseable salah. v
 
+6. kasih limit buat foto.
+
+7. carosel belom dirapihin.
+
+8. foto cuma bisa horizontal, buat bisa dua duanya.
+
 
 # Noted perubahan kode
 
@@ -55,11 +61,15 @@ const App = () => {
 
 export default App;
 
-2. buat log in authenticator.
+2. buat log in authenticator. v
 
 3. coba database buat artikel.
 
-4. coba submit artikel baru lewat form.
+4. coba submit artikel baru lewat form. v
+
+5. Beranda admin belom selesai (view, delete).
+
+6. admin database.
 
 
 

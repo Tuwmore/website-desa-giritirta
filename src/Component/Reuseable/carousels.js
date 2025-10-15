@@ -1,6 +1,5 @@
 
 import {Card, Button} from 'react-bootstrap';
-import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 
 const carousels = ({ title, imageUrl }) => {  // variable untuk data dinamis
   return (

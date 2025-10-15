@@ -1,7 +1,6 @@
 
 import React from 'react';
 import { Card, Button, Row, Col, Image } from 'react-bootstrap';
-import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 import trash from "../../Assets/trash.png"
 import "./reuseableStyle.css";
 

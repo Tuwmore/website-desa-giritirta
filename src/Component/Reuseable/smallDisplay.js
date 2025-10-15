@@ -1,5 +1,4 @@
 import {Card, Button} from 'react-bootstrap';
-import Holder from "../../Assets/DSCF9005.JPG"; // foto sementara untuk contoh
 
 const smallDisplay = ({ title, description, imageUrl }) => {  // variable untuk data dinamis
   return (

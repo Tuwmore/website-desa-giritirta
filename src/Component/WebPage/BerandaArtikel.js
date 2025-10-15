@@ -4,6 +4,7 @@ import Holder from "../../Assets/DSCF9005.JPG";
 import Header from "../Reuseable/Header";
 import Footer from "../Reuseable/Footer";
 import "./webPageStyle.css"
+import Judul from "../Reuseable/Judul";
 
 function BerandaAdmin (){
     const cardData = [
@@ -67,8 +68,11 @@ function BerandaAdmin (){
         }
 
     return (
-        <Stack>
+        <Stack style={{marginTop: "5vh"}}>
             <Header/>
+            <div style={{overflow: "hidden"}}>
+                <Judul/>
+            </div>
             <Container>
                 <Row xs={1} >
                     {cardData.map((card, index) => (
